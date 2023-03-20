@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+
+
+
+#action {
+  width: 100vw;
+  height: 4vh;
+}
+input {
+  display: inline;
+  width: 200px;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-left: 25%;
+  margin-right: 5%;
+  display: inline;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+li {
+  color: rgb(255, 251, 0);
+  list-style: none;
+  cursor: default;
+  transition-duration: 300ms;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+li:hover {
+  font-size: 1.2rem;
+}
+.App, strong {
+  color: rgb(255, 0, 0);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .App {
+    height: 80vw;
+  }
+}
+@media screen and (max-width: 710px) {
+  .App {
+    height: auto;
+  }
+  li {
+    font-size: 2.2rem;
+  }
+  li:hover {
+    font-size: 2.4rem;
+  }
+}
